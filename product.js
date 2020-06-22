@@ -34,7 +34,8 @@ router.post('/doInsert',async(req,res)=>{
     let nameValue = req.body.txtName;
     let priceValue = req.body.txtPrice;
     let colorValue = req.body.txtColor;
-    let newProduct = {name : nameValue, price : priceValue,color:colorValue};
+    let detailValue=req.body.txtDetail;
+    let newProduct = {name : nameValue, price : priceValue,color:colorValue,detail:detailValue};
     await dbo.collection("products").insertOne(newProduct);
     console.log(newProduct);
     // let results = await dbo.collection("products").find({}).toArray();

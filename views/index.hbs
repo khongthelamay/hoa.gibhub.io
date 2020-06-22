@@ -9,6 +9,9 @@
     <link rel="shortcut icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fngoisao.net%2Fgia-dinh%2Fbe-gai-meu-mao-chup-anh-voi-cuc-hoa-mi-4008697.html&psig=AOvVaw39KMiRtHfvZ0YYoaoCRNKw&ust=1592875606890000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKiX5JuilOoCFQAAAAAdAAAAABAD" type="image/x-icon">
 </head>
 <body>
+    <div class="create">
+                    <a href="/insert"style="background-color:Black" class="btn-create"><span class="icon-create"><i class="fa fa-plus" aria-hidden="true"></i></span>Add product</a>
+     </div>
         <div class="container">
             
             <div class="title">
@@ -16,15 +19,14 @@
             </div>
             
             <div class="list">
-                <div class="create">
-                    <a href="/insert"style="background-color:Black" class="btn-create"><span class="icon-create"><i class="fa fa-plus" aria-hidden="true"></i></span>Add product</a>
-                </div>
+                
                 <form action="">
                     <table  border="1" >
                         <tr class="thead">
                             <th style="background-color:rgb(8, 253, 29)"class="col-name">Name</th>
                             <th style="background-color:rgb(0, 204, 255)" class="col-id"> Price</th>
                             <th style="background-color:rgb(4, 0, 255)" class="col-color">Color</th>
+                            <th style="background-color:rgb(4, 0, 255)" class="col-detail">Detail</th>
                             <th style="background-color:rgb(255, 0, 255)" class="col-act">Action</th>
                         </tr> 
                         {{#each products}}
@@ -32,6 +34,7 @@
                             <td style="color:rgb(255, 255, 255);background-color:rgb(8, 253, 29)">{{name}}</td>
                             <td style="color:rgb(255, 255, 255);background-color:rgb(0, 204, 255);text-align:center">{{price}}</td>
                             <td style="color:rgb(255, 255, 255);background-color:rgb(4, 0, 255);text-align:center">{{color}}</td>
+                            <td style="color:rgb(255, 255, 255);background-color:rgb(4, 0, 255);text-align:center">{{detail}}</td>
                             <td style="color:rgb(255, 255, 255);background-color:rgb(255, 0, 255)">
                                 <span class="icon"><a href="/update?id={{_id}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                 <a href="/delete?id={{_id}}"><i class="fa fa-trash" aria-hidden="true"></i></a></span>

@@ -5,8 +5,13 @@
 }
 body{
     padding-top: 20px;
-    background-color: rgba(223, 230, 233,1.0);
+background-image: url("https://i.pinimg.com/originals/38/6f/47/386f47c88a7aaa497ec6edc1c02cc9b6.jpg");
+    background-position: center center;
     height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .container{
     width: 80%;
